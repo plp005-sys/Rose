@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Pacifico&display=swap');
+@font-face {
+  font-family: 'Milky Bun';
+  src: url('/Fonts/Milky%20Bun.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AMORIA';
+  src: url('/Fonts/AMORIA.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Modern Prestige';
+  src: url('/Fonts/Modern%20Prestige%20DEMO.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Aroma Vintage';
+  src: url('/Fonts/AromaVintage-Regular.otf') format('opentype');
+}
+@import "tailwindcss";
+
+@theme {
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-peanut: "Chewy", cursive;
+  --font-milky: "Milky Bun", cursive;
+  --font-amoria: "AMORIA", sans-serif;
+  --font-modern: "Modern Prestige", serif;
+  --font-aroma: "Aroma Vintage", serif;
+  --color-primary-light: #ff0d72;
+  --color-primary-dark: #420733;
+  --color-primary-lime: #62f507;
+  --color-secondary-lime: #1bc405;
+  --color-secondary-purple: #ff0d72;
+  --color-warm-white: #FAFAF7;
+  --color-light-grey: #F5F5F5;
+  --color-accent-gold: #F2C94C;
+  --color-accent-blue: #5AB6E6;
+
+  --animate-gradient-x: gradient-x 15s ease infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.03);
+    }
+  }
+}
+
+body {
+  background-color: #FAFAF7;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0d72;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #420733;
+}
+
+/* Custom styles for the moving glassmorphism and ambient glows */
+.animated-bg-mesh {
+  background: linear-gradient(-45deg, #FAFAF7, #F5F5F5, #ebfaeb, #fbf2f7, #FAFAF7);
+  background-size: 400% 400%;
+  animation: gradient-x 20s ease infinite;
+}
+
+.ambient-glow-purple {
+  filter: blur(120px);
+  background: radial-gradient(circle, rgba(255, 13, 114, 0.1) 0%, rgba(250,250,247,0) 70%);
+}
+
+.ambient-glow-green {
+  filter: blur(120px);
+  background: radial-gradient(circle, rgba(98,245,7,0.08) 0%, rgba(250,250,247,0) 70%);
+}
+
+.animated-footer-bg {
+  background: linear-gradient(-45deg, #4a1859, #e8095b, #da2e4b, #62f507);
+  background-size: 400% 400%;
+  animation: gradient-x 15s ease infinite;
+}
