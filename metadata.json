@@ -1,0 +1,6 @@
+{
+  "name": "Ecology",
+  "description": "A 5-page environmental NGO website featuring an interactive Join Our Journey CTA, animated gradient backgrounds, and responsive layouts to inspire positive global impact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

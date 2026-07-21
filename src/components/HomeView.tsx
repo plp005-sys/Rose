@@ -303,43 +303,43 @@ export default function HomeView({ onNavigate, onOpenJoinJourney, onOpenDonate }
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 lg:gap-12">
           
           {/* Card 1 */}
-          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full">
+          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full scale-[1.15] sm:scale-[1.20] hover:scale-[1.25] transition-transform duration-500">
             <div className="absolute bottom-0 left-0 right-0 top-32 bg-[#f4f7fe] rounded-[2rem] sm:rounded-[2.5rem] z-0"></div>
             
-            <div className="relative z-10 w-full aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-white bg-white overflow-hidden shadow-sm shrink-0">
+            <div className="relative z-10 w-full scale-110 sm:scale-[1.15] transition-transform duration-500 hover:scale-[1.20] aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-white bg-white overflow-hidden shadow-sm shrink-0">
               <img src={imgClimateGuardians} alt="Climate Guardians" className="w-full h-full object-cover" />
             </div>
             <div className="relative z-10 flex flex-col items-center text-center px-2 flex-grow">
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0c2a2a] mb-2">Climate Guardians</h3>
-              <p className="text-[#0c2a2a] text-xs sm:text-sm font-semibold mb-8">Acting Today for a Cooler Tomorrow</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0c2a2a] mb-2">Developmental Outreach</h3>
+              <p className="text-[#0c2a2a] text-xs sm:text-sm font-semibold mb-8">Reaching out to the remote areas for Skills development, Awareness via Media, and Supporting children in Environmental Education.</p>
               <button className="bg-white text-[#0c2a2a] font-bold text-xs sm:text-sm px-8 py-3 rounded-full hover:bg-gray-50 transition-colors shadow-sm w-max mt-auto">
-                Donate
+                More
               </button>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full">
+          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full scale-[1.15] sm:scale-[1.20] hover:scale-[1.25] transition-transform duration-500">
             <div className="absolute bottom-0 left-0 right-0 top-32 bg-[#ebfcf3] rounded-[2rem] sm:rounded-[2.5rem] z-0"></div>
             
-            <div className="relative z-10 w-full aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-purple-500/40 bg-purple-500/20 backdrop-blur-xl overflow-hidden shadow-lg shrink-0">
-              <img src={imgSavannahPlantation} alt="Forests of the Future" className="w-full h-full object-cover" />
+            <div className="relative z-10 w-full scale-110 sm:scale-[1.15] transition-transform duration-500 hover:scale-[1.20] aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-[#FFD700]/30 bg-[#FFD700]/10 backdrop-blur-xl overflow-hidden shadow-lg shrink-0">
+              <img src={imgSavannahPlantation} alt="Forests of the Future" className="w-full h-full object-contain" />
             </div>
 
             <div className="relative z-10 flex flex-col items-center text-center px-2 flex-grow">
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0c2a2a] mb-2">Forests of the Future</h3>
-              <p className="text-[#0c2a2a] text-xs sm:text-sm font-semibold mb-8">Replanting, Restoring, Reviving</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0c2a2a] mb-2">Environmental Education</h3>
+              <p className="text-[#0c2a2a] text-xs sm:text-sm font-semibold mb-8">Custody awareness, Restoring, Replanting</p>
               <button className="bg-white text-[#0c2a2a] font-bold text-xs sm:text-sm px-8 py-3 rounded-full hover:bg-gray-50 transition-colors shadow-sm w-max mt-auto">
-                Donate
+                More
               </button>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full">
+          <div className="relative pt-6 px-4 pb-10 mt-12 flex flex-col h-full scale-[1.15] sm:scale-[1.20] hover:scale-[1.25] transition-transform duration-500">
             <div className="absolute bottom-0 left-0 right-0 top-32 bg-[#f0f3fd] rounded-[2rem] sm:rounded-[2.5rem] z-0"></div>
             
-            <div className="relative z-10 w-full aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-white bg-white overflow-hidden shadow-sm shrink-0">
+            <div className="relative z-10 w-full scale-110 sm:scale-[1.15] transition-transform duration-500 hover:scale-[1.20] aspect-square mb-8 rounded-[2.5rem] sm:rounded-[3rem] border-[12px] sm:border-[16px] border-white bg-white overflow-hidden shadow-sm shrink-0">
               <img src={imgBlueHorizon} alt="Blue Horizon" className="w-full h-full object-cover" />
             </div>
 
@@ -347,7 +347,7 @@ export default function HomeView({ onNavigate, onOpenJoinJourney, onOpenDonate }
               <h3 className="text-xl sm:text-2xl font-bold text-[#0c2a2a] mb-2">Blue Horizon</h3>
               <p className="text-[#0c2a2a] text-xs sm:text-sm font-semibold mb-8">Restoring Ocean Health</p>
               <button className="bg-white text-[#0c2a2a] font-bold text-xs sm:text-sm px-8 py-3 rounded-full hover:bg-gray-50 transition-colors shadow-sm w-max mt-auto">
-                Donate
+                More
               </button>
             </div>
           </div>
